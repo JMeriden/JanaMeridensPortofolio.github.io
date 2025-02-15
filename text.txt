@@ -1,0 +1,80 @@
+1. Database Management System - Case Study
+Project Overview
+This project aimed to create a robust database management system using SQL Server and .NET Framework. It was developed to handle large-scale data operations efficiently while providing a user-friendly graphical interface.
+
+Challenges
+Designing an optimized relational database schema.
+Implementing dynamic queries for efficient data retrieval.
+Ensuring data consistency and security.
+Solutions
+Developed a structured database using SQL Server with optimized indexing and normalization.
+Used parameterized queries to prevent SQL injection and improve performance.
+Implemented stored procedures to automate and optimize common tasks.
+Integrated GitHub for collaborative development and version control.
+Outcome
+A fully functional, scalable, and secure database management system.
+Significant improvement in data retrieval speeds using dynamic queries.
+User-friendly interface for seamless interaction with the database.
+2. Miniature Operating System Development - Case Study
+Project Overview
+The miniature operating system was designed in C to manage basic OS functionalities like process scheduling and memory management, simulating real-world OS operations.
+
+Challenges
+Implementing an efficient scheduling mechanism.
+Managing memory dynamically with limited resources.
+Ensuring system stability with concurrent processes.
+Solutions
+Developed a multi-threaded scheduling algorithm supporting round-robin and priority-based scheduling.
+Implemented a tree-based resource management system to allocate and deallocate memory efficiently.
+Used inter-process communication (IPC) to handle process synchronization.
+Outcome
+A functional lightweight operating system capable of handling multiple processes efficiently.
+Improved process execution speeds and reduced memory overhead.
+Successful simulation of real-world OS operations.
+3. Alien Invaders Game Development - Case Study
+Project Overview
+This project was a C++ game simulating an alien invasion, requiring players to defend Earth using a structured battle system.
+
+Challenges
+Designing an engaging gameplay experience.
+Efficiently managing multiple game elements.
+Implementing smooth animations and performance optimization.
+Solutions
+Used object-oriented programming principles for structured game development.
+Employed data structures like linked lists, queues, and priority queues to manage alien waves and projectiles.
+Optimized rendering and collision detection for smooth performance.
+Outcome
+A fully functional, interactive, and engaging game.
+Efficient memory and performance management with structured data handling.
+Positive feedback from users regarding gameplay mechanics.
+4. Flowchart Simulator with GUI - Case Study
+Project Overview
+A C++-based tool allowing users to create, visualize, and interact with flowcharts through a graphical user interface (GUI).
+
+Challenges
+Designing an intuitive GUI for easy interaction.
+Efficient memory management for dynamic flowchart elements.
+Implementing smooth rendering and user interactions.
+Solutions
+Built a GUI using C++ libraries for interactive flowchart creation.
+Applied pointer-based memory management to handle dynamic objects.
+Enabled real-time user modifications and visual feedback.
+Outcome
+A user-friendly flowchart simulator with smooth graphical interactions.
+Optimized memory usage for handling large flowcharts efficiently.
+High usability for students and professionals learning flowcharting.
+
+
+/////
+/*.custom-caption {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(5px);
+    color:black !important; 
+    padding: 15px;
+    border-radius: 10px;
+    width: 80%; 
+    margin: auto;
+    text-align:center;
+    font-size: 18px;
+    font-weight:bold;
+}*/

@@ -1,0 +1,49 @@
+/*for entire page*/
+*{
+    font-family: "Playfair Display", serif;
+    scroll-behavior: smooth; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn-outline-primary {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+ul, ol {
+    display: block;
+    list-style-type: initial; /* Ensures bullets/numbers appear */
+    margin-left: 20px;
+    padding-left: 20px;
+    transition-duration: 10s;
+}
+ul {
+    list-style-type: disc; /* Ensures unordered lists use bullets */
+}
+
+ol {
+    list-style-type: decimal; /* Ensures ordered lists use numbers */
+}
+h1,h2{
+    text-align: center;
+}
+.Snippets{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.card {
+    width: 18rem;
+    max-width: 300px; /* Ensures the cards don’t get too big */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}

@@ -1,0 +1,192 @@
+/*for entire page*/
+*{
+    font-family: "Playfair Display", serif;
+    scroll-behavior: smooth; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/*for parent container*/
+.bigPage{
+    display: flex;
+    flex-direction: column;
+}
+/*navigation bar*/
+#navBar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000000;
+    padding: 10px 20px;
+    width: 100%;
+    background-color: rgba(252,224,200,255);
+    height: 70px;
+}
+.navbar-nav {
+    text-align: right;
+}
+.navbar-collapse{
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar-brand{
+    position: absolute; /*wala fixed??*/
+    top: 10px;
+    left: 15px;
+}
+.nav-item:hover{
+    font-size: 1.2em; /* Increases text size on hover */
+    transition: font-size 0.3s ease-in-out;
+}
+/*hero section*/
+#hero{
+    padding-top: 80px;
+    display: flex;
+    min-height: 100vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.div1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.div2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+img{
+    height: auto;
+    border-radius: 5px;
+}
+/*carousel*/
+.custom-carousel {
+    max-width: 70%; 
+    max-height: 70%;
+    margin: 50px auto; 
+}
+.custom-carousel img {
+    object-fit: cover;
+    height: 100%; 
+}
+.custom-carousel .carousel-item img {
+    width: 100%;  
+    height: 100%; 
+    object-fit: cover; 
+}
+#carouselExampleIndicators .carousel-caption {
+    color: black !important;
+    background-color: rgba(255, 255, 255, 0.4) !important;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+}
+.case-study-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.9;
+    z-index: 10; /* Ensure it appears above the image */
+    transition: opacity 0.3s ease;
+}
+.case-study-btn:hover {
+    opacity: 1;
+}
+/*services*/
+.container {
+    display: flex;
+    height: 100vh;
+    width:100%;
+}
+.scrollable-section{
+    width:70%;
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 100vh;
+    scrollbar-width: 0px;
+}
+.fixed-section{
+    width:30%;
+    position:sticky;
+    top:0;
+    height:100vh;
+    box-sizing: border-box;
+}
+.cardcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    justify-content: center;
+}
+.card{
+    width: 18rem;
+    max-width: 300px; /* Ensures the cards don’t get too big */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+.fixed-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*footer*/
+#footer .card-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; /* Adjust as needed */
+  }
+/*responsiveness*/
+@media only screen and (max-width: 768px){
+    #navBar{
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: right;
+        padding: 15px 20px;
+    }
+    .navbar-nav {
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .div1 {
+        width: 100%;
+        padding-left: 60px;
+        align-items: flex-end;
+        text-align: right; 
+    }
+
+    .div1 h4, .div1 h2 {
+        max-width: 80%;
+        text-align:right;
+    }
+    .container{
+        margin-left: 20%;
+    }
+}
